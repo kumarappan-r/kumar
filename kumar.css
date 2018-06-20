@@ -1,0 +1,220 @@
+
+.container1{
+  display:grid;
+  grid-template-columns:"1fr 1fr 1fr";
+  grid-template-rows:"1fr 1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:40px;
+  text-align:left;
+  padding:2em;
+  justify-content:center;
+  height:100%;
+  grid-template-areas:
+    "quality-logo quality-feature quality-feature"
+    "delivery-logo  delivery-feature  delivery-feature "
+    "contact-logo  contact-feature  contact-feature ";
+}
+.quality-logo{
+  grid-area:quality-logo;
+}
+.quality-feature{
+  grid-area:quality-feature;
+}
+.delivery-logo{
+  grid-area:delivery-logo;
+}
+.delivery-feature{
+  grid-area:delivery-feature;
+}
+.contact-logo{
+  grid-area:contact-logo;
+}
+.contact-feature{
+  grid-area:contact-feature;
+}
+#header-img{
+   width:100%;
+  height:auto;
+ background-color:#ff0000;
+  filter:none;
+}
+
+.logo-format{
+  font-size:4.8em;
+  color:red;
+}
+.asset-container{
+  display:grid;
+  height:100%;
+ 
+  padding:2em;
+  grid-template-columns:"1fr 1fr 1fr";
+  grid-template-rows:"1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:30px;
+  grid-template-areas:
+    "header header header"
+    "asset1 asset2 asset3";
+}
+.asset-box{
+  width:100%;
+  box-sizing:border-box;
+  border:2px solid red;
+ 
+  border-radius:2em;
+  box-shadow:   1px 5px 5px 6px #ccc; 
+}
+.assets-img{
+  width:100%;
+  height:12em;
+  padding:0.5em;
+  position:relative;
+}
+.header{
+  grid-area:header;
+}
+.asset1{
+  grid-area:asset1;
+}
+.asset2{
+  grid-area:asset2;
+}
+.asset3{
+  grid-area:asset3;
+}
+img.center{
+  margin-top:8em;
+  margin-bottom:3em;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  padding:20px 20px;
+ width:100%;
+  height:auto;
+
+}
+html,body{
+  font-size:;
+}
+@media screen and (max-width:850px){
+ .asset-container{
+  display:grid;
+  height:100%;
+ 
+  padding:2em;
+  grid-template-columns:"1fr 1fr ";
+  grid-template-rows:"1fr 1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:30px;
+  grid-template-areas:
+    "header header "
+    "asset1 asset2"
+    ". asset3";
+}
+  .container1{
+    padding:2em;
+  }
+} /** this bracket me ahhhh ! sense **/
+
+  @media screen and (max-width:520px){
+ .asset-container{
+  display:grid;
+  height:100%;
+ 
+  
+  grid-template-columns:"1fr";
+  grid-template-rows:"1fr 1fr 1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:30px;
+  grid-template-areas:
+    "header"
+    "asset1 "
+    "asset2"
+    "asset3";
+}
+  }
+   
+.edible-container{
+  display:grid;
+  height:100%;
+  grid-gap:15px;
+  grid-template-columns:repeat(auto-fit,minmax(275px,1fr)); 
+  grid-template-rows:repeat(2,1fr);
+  /**grid-template-areas:
+    "gold-winner-vita gold-winner-refined fedora-olive "
+    "cardia oryza pure-plus"
+    "palm-super . .";**/
+}
+
+.resp-container{
+  padding-top:56.25%; /* 16 :9 conversion */
+  overflow:hidden;
+  position:relative;
+}
+.resp-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.flex-container > div{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+   padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: tomato;
+}
+.contact{
+  flex:auto;
+  color:black;
+}
+.reach{
+  flex:auto;
+}
+.contact-photo{
+  border-radius:50%;
+  width:100px;
+}
+
+.form-group{
+  margin-top:15px;
+  
+  padding:5px;
+}
+
+#submit{
+   border-top: 1px solid #96d1f8;
+   background: #fc0071;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f71b1b), to(#fc0071));
+   background: -webkit-linear-gradient(top, #f71b1b, #fc0071);
+   background: -moz-linear-gradient(top, #f71b1b, #fc0071);
+   background: -ms-linear-gradient(top, #f71b1b, #fc0071);
+   background: -o-linear-gradient(top, #f71b1b, #fc0071);
+   padding: 10px 30px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#submit:hover {
+   border-top-color: #67addb;
+   background: #67addb;
+   color: #e84c4c;
+   }
+#submit:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }

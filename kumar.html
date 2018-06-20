@@ -1,0 +1,655 @@
+
+<!DOCTYPE html><html lang='en' class=''>
+<head><script src='//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js'></script><script src='//static.codepen.io/assets/editor/live/css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/THIYAGU22/pen/JZEYrJ" />
+
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'><link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+<style class="cp-pen-styles">
+.container1{
+  display:grid;
+  grid-template-columns:"1fr 1fr 1fr";
+  grid-template-rows:"1fr 1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:40px;
+  text-align:left;
+  padding:2em;
+  justify-content:center;
+  height:100%;
+  grid-template-areas:
+    "quality-logo quality-feature quality-feature"
+    "delivery-logo  delivery-feature  delivery-feature "
+    "contact-logo  contact-feature  contact-feature ";
+}
+.quality-logo{
+  grid-area:quality-logo;
+}
+.quality-feature{
+  grid-area:quality-feature;
+}
+.delivery-logo{
+  grid-area:delivery-logo;
+}
+.delivery-feature{
+  grid-area:delivery-feature;
+}
+.contact-logo{
+  grid-area:contact-logo;
+}
+.contact-feature{
+  grid-area:contact-feature;
+}
+#header-img{
+   width:100%;
+  height:auto;
+ background-color:#ff0000;
+  filter:none;
+}
+
+.logo-format{
+  font-size:4.8em;
+  color:red;
+}
+.asset-container{
+  display:grid;
+  height:100%;
+
+  padding:2em;
+  grid-template-columns:"1fr 1fr 1fr";
+  grid-template-rows:"1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:30px;
+  grid-template-areas:
+    "header header header"
+    "asset1 asset2 asset3";
+}
+.asset-box{
+  width:100%;
+  box-sizing:border-box;
+  border:2px solid red;
+
+  border-radius:2em;
+  box-shadow:   1px 5px 5px 6px #ccc;
+}
+.assets-img{
+  width:100%;
+  height:12em;
+  padding:0.5em;
+  position:relative;
+}
+.header{
+  grid-area:header;
+}
+.asset1{
+  grid-area:asset1;
+}
+.asset2{
+  grid-area:asset2;
+}
+.asset3{
+  grid-area:asset3;
+}
+img.center{
+  margin-top:8em;
+  margin-bottom:3em;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  padding:20px 20px;
+ width:100%;
+  height:auto;
+
+}
+html,body{
+  font-size:;
+}
+@media screen and (max-width:850px){
+ .asset-container{
+  display:grid;
+  height:100%;
+
+  padding:2em;
+  grid-template-columns:"1fr 1fr ";
+  grid-template-rows:"1fr 1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:30px;
+  grid-template-areas:
+    "header header "
+    "asset1 asset2"
+    ". asset3";
+}
+  .container1{
+    padding:2em;
+  }
+} /** this bracket me ahhhh ! sense **/
+
+  @media screen and (max-width:520px){
+ .asset-container{
+  display:grid;
+  height:100%;
+
+
+  grid-template-columns:"1fr";
+  grid-template-rows:"1fr 1fr 1fr 1fr";
+  grid-row-gap:20px;
+  grid-column-gap:30px;
+  grid-template-areas:
+    "header"
+    "asset1 "
+    "asset2"
+    "asset3";
+}
+  }
+
+.edible-container{
+  display:grid;
+  height:100%;
+  grid-gap:15px;
+  grid-template-columns:repeat(auto-fit,minmax(275px,1fr));
+  grid-template-rows:repeat(2,1fr);
+  /**grid-template-areas:
+    "gold-winner-vita gold-winner-refined fedora-olive "
+    "cardia oryza pure-plus"
+    "palm-super . .";**/
+}
+
+.resp-container{
+  padding-top:56.25%; /* 16 :9 conversion */
+  overflow:hidden;
+  position:relative;
+}
+.resp-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.flex-container > div{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+   padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: tomato;
+}
+.contact{
+  flex:auto;
+  color:black;
+}
+.reach{
+  flex:auto;
+}
+.contact-photo{
+  border-radius:50%;
+  width:100px;
+}
+
+.form-group{
+  margin-top:15px;
+
+  padding:5px;
+}
+
+#submit{
+   border-top: 1px solid #96d1f8;
+   background: #fc0071;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f71b1b), to(#fc0071));
+   background: -webkit-linear-gradient(top, #f71b1b, #fc0071);
+   background: -moz-linear-gradient(top, #f71b1b, #fc0071);
+   background: -ms-linear-gradient(top, #f71b1b, #fc0071);
+   background: -o-linear-gradient(top, #f71b1b, #fc0071);
+   padding: 10px 30px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#submit:hover {
+   border-top-color: #67addb;
+   background: #67addb;
+   color: #e84c4c;
+   }
+#submit:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }</style></head><body>
+<html>
+  <head>
+    <!-- test suit -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <title>KALEESUWARI PRODUCT-LANDING PAGE </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+    <body>
+
+
+       <header id="header">
+          <nav class="navbar bg-light navbar-light fixed-top navbar-expand-lg" id="nav-bar">
+
+
+            <a class="navbar-brand" href="http://kaleesuwari.com/" target="_blank"><img src="http://kaleesuwari.com/images/kaleesuwari-logo.png" alt="krpl logo" id="header-img" >
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+
+
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="navbar-item">
+                   <a href="#edible" target="_self" class="nav-link">BRANDS</a>                         </li>
+             <li class="navbar-item">
+                  <a href="#contact" target="_self" class="nav-link ">contact us</a>                  </li>
+                <li class="navbar-item">
+                  <a href="#quality" target="_self" class="nav-link ">quality</a>                       </li>
+              </ul>
+           </div> <!--collapse toggle -->
+         </nav>
+      </header>
+
+      <main>
+
+        <div class="stocks">
+        <img src="http://kaleesuwari.com/images/Availability-banner.jpg" class="center">
+        </div>
+
+        <div class="container1" id="quality">
+
+          <div class="quality-logo">
+             <i class="fas fa-clipboard-check logo-format"></i>
+          </div>
+
+          <div class="quality-feature">
+            <h2>Quality Assurance</h2>
+    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pages and covers beforehand.</p>
+          </div>
+
+          <div class="delivery-logo">
+            <i class="fas fa-truck logo-format"></i>
+          </div>
+
+          <div class="delivery-feature">
+            <h2>fast and accurate </h2>
+            <p> We are in the immense growth surely we can assist you at our care We are in the immense growth surely we can assist you at our care </p>
+          </div>
+
+
+          <div class="contact-logo">
+            <i class="far fa-compass logo-format"></i>
+          </div>
+
+          <div class="contact-feature">
+            <h2>reach us ! </h2>
+            <p> Velmurugan traders
+              <br> kumarappan . R <br> 9750473918 </p>
+           </div>
+        </div> <!-- div container -->
+
+        <div class="asset-container">
+
+          <h2 class="header text-center"> OUR ASSETS </h2>
+
+          <div class="asset1 asset-box">
+            <h5 class="text-center"> EDIBLE IS OUR NATURE </h5> <hr>
+            <img src="https://4.bp.blogspot.com/-PXW6jbPlNyc/V5Ig7cNnv8I/AAAAAAABa-M/KagJ5ZPlCjgJrV_6H7N3NJSlnJC6IBN4ACLcB/s640/Gold%2BWinner-min.jpg" width="960" height="640" class="assets-img" />
+          </div>
+
+          <div class="asset2 asset-box">
+            <h4 class="text-center"> PERSONAL CARE </h4> <hr>
+            <img src="https://5.imimg.com/data5/FV/VX/GLADMIN-7423227/eldia-enriched-hair-oil-500x500.png" width="960" height="640" class="assets-img"/>
+          </div>
+
+          <div class="asset3 asset-box">
+            <h4 class="text-center"> HOME CARE </h4> <hr>
+            <img src="https://www.irely.in/media/catalog/product/cache/1/image/500x400/9df78eab33525d08d6e5fb8d27136e95/d/e/deppam-lamp-oil-500ml.jpg" width="960" height="640" class="assets-img" />
+          </div>
+
+        </div> <!-- div container -->
+
+        <!-- help me bootstrap -->
+
+ <div class="edible-container" id="edible">
+   <div> <!-- gold winner vita-->
+  <div class="container">
+
+    <div class="card">
+
+      <img class="img-card-top" src="http://kaleesuwari.com/images/can.jpg" style="height:35vh;">
+      <div class="card-body">
+
+        <h4 class="card-title"> GOLD WINNER VITA D3 </h4>
+
+        <p class="card-text">Around 80% of Indians are Vitamin D deficient or insufficient despite getting adequate sunshine throughout the year. It is essential to have exposure to sun and dietary intake rich in Vitamin D. </p>
+      </div>
+    <ul class="list-group list-group-flush">
+      <li class ="list-group-item">
+
+        VITAMIN D HELPS IN
+
+      </li>
+     <li class ="list-group-item">
+        <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> Stronger bones
+      </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Prevention of Diabetes </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Regulating Blood Pressure </li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Better Heart Health </li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> Better Immunity</li>
+      </ul>
+
+
+    </div><!-- gold-winner -->
+    </div>
+
+  </div>
+
+
+<div > <!-- class="gold-winner-refined" -->
+  <div class="container ">
+
+    <div class="card"  >
+
+      <img class="img-card-top" src="http://kaleesuwari.com/images/products/gold-winner-groundnet.png" style="height:35vh;">
+      <div class="card-body">
+
+        <h4 class="card-title"> Gold Winner - Refined Groundnut Oil</h4>
+
+        <p class="card-text">Gold Winner Refined Groundnut Oil contains the wholesome nutrition of groundnuts.The superior quality of the raw materials and state-of-the-art refining processes ensure that Gold Winner Refined Groundnut Oil is of the finest quality.
+</p>
+      </div> <!-- div card-body-->
+    <ul class="list-group list-group-flush">
+      <li class ="list-group-item">
+
+        Packages Available in
+
+      </li>
+     <li class ="list-group-item">
+        <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> 1 ltr Pouches
+      </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">1 ltr Pet Bottle</li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">2 ltr Pet Bottle  </li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> 5 ltr Jar <br> 15 Kg Tin</li>
+
+
+      </ul>
+
+
+    </div><!-- card -->
+
+  </div><!-- container -->
+
+   </div><!-- gold winner -refined -->
+
+ <div> <!-- class="fedora-olive"-->
+ <div class="container">
+
+    <div class="card" >
+
+      <img class="img-card-top" src="http://kaleesuwari.com/images/products/fedora-olive-oil.png" style="height:35vh;">
+      <div class="card-body">
+
+        <h4 class="card-title"> Fedora Olive Oil</h4>
+
+        <p class="card-text">Premium range of olive oils for a Healthier Lifestyle key nutrients : Omega 9 (MUFA)
+Antioxidants like Vitamins A, D, E, K and B-carotene
+</p>
+      </div> <!-- div card-body-->
+    <ul class="list-group list-group-flush">
+      <li class ="list-group-item">
+
+        BENEFITS
+
+      </li>
+     <li class ="list-group-item">
+        <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> Lowers cholesterol accumulation in the blood and helps in heart health
+      </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Reduces the risk of breast and skin cancer</li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Extra Virgin Olive Oil : <br>
+SKUs: 1 ltr Pet Bottle</li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Extra Light* Olive Oil:<br>
+SKUs: 1 ltr Pet Bottle
+</li>
+
+
+
+    </div><!-- card -->
+
+  </div><!-- container -->
+
+     </div> <!-- fedora-olive-->
+
+ <div ><!--class="cardia"-->
+ <div class="container">
+
+    <div class="card" >
+
+      <img class="img-card-top" src="http://kaleesuwari.com/images/products/cardia-life.png" style="height:35vh;">
+      <div class="card-body">
+
+        <h4 class="card-title">Cardia Life - Blend Of Olive & Corn Oil</h4>
+
+        <p class="card-text">Bring home Cardia Life, with goodness of corn and olive, rich sources of anti - oxidants, Omega 6 fatty acids, Omega 9 and Natural Vitamin E, which strengthen immunity
+</p>
+      </div> <!-- div card-body-->
+    <ul class="list-group list-group-flush">
+      <li class ="list-group-item">
+
+        Benefits and Availability:
+
+      </li>
+     <li class ="list-group-item">
+        <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> Rich in Oryzanol
+Helps eliminate bad cholesterol and absorb good cholesterol
+      </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Perfect Balance of MUFA+ PUFA
+Helps in high intake of good fats required for the body</li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> Packages Available in <br>
+SKUs: 1 ltr (stand up pouch) </li>
+
+
+      </ul>
+
+
+    </div><!-- card -->
+
+  </div><!-- container -->
+     </div><!--cardia-->
+
+     <div > <!--class="oryza"-->
+ <div class="container">
+
+    <div class="card"  >
+
+      <img class="img-card-top" src="http://kaleesuwari.com/images/products/orysa.png" style="height:35vh;">
+      <div class="card-body">
+
+        <h4 class="card-title"> Orysa Refined Rice Bran Oil</h4>
+
+        <p class="card-text">A good cooking oil doesn’t just add taste to the food, but also plays a pivotal role in one’s health. Yes! That’s Orysa for you with all the goodness of refined Rice Bran Oil packed in it. An excellent salad & Frying Oil.
+</p>
+      </div> <!-- div card-body-->
+    <ul class="list-group list-group-flush">
+      <li class ="list-group-item">
+
+        Benefits & availability:
+
+      </li>
+     <li class ="list-group-item">
+        <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> Absorbs 15% Less Oil
+</li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">
+Improve Good Cholesterol,
+Reduce Bad Cholesterol</li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">Packages Available :5 ltr (Jar) </li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">  1 ltr (Pouch) </li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">  15 kg (Tin) </li>
+      </ul>
+
+    </div><!-- card -->
+
+  </div><!-- container -->
+
+     </div><!--oryza-->
+
+     <div ><!--class="pure-plus"-->
+ <div class="container">
+
+    <div class="card" >
+
+      <img class="img-card-top" src="http://kaleesuwari.com/images/products/pure-plus.png" style="height:35vh;">
+      <div class="card-body">
+
+        <h4 class="card-title">Pure Plus</h4>
+
+        <p class="card-text">
+Pure Plus is made from hand-picked, premium quality copra with its signature aroma and freshness it has wide array of benefits too.
+<br>
+Key Nutrients:<br>
+MCFA, Medium Chain Fatty Acids
+</p>
+      </div> <!-- div card-body-->
+    <ul class="list-group list-group-flush">
+      <li class ="list-group-item">
+
+        Packages Available in
+
+      </li>
+     <li class ="list-group-item">
+        <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> 5 ltr (Jar)
+      </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">1 ltr (Pouch)</li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> 500 ml (Pouch)</li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> 15 kg (Tin)</li>
+
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">  15 ltr (Tin)</li>
+      </ul>
+
+    </div><!-- card -->
+
+  </div><!-- container -->
+     </div><!-- pure plus -->
+
+     <div ><!-- class="palm-super" -->
+<div class="container ">
+
+    <div class="card" >
+
+      <img class="img-card-top" src="http://kaleesuwari.com/images/products/paalm-super1.png" style="height:35vh;">
+      <div class="card-body">
+
+        <h4 class="card-title"> Paalm Super - RBD Palmolein</h4>
+
+        <p class="card-text">Palm Super is a refined, bleached and deodorized form of palm oil which is extracted after crushing the palm fruit which is rich in Vitamin E (Tocopherols & Tocotrienols) and is a powerful anti-oxidant. The RBD Palmolein has a property of reducing the risks of certain chronic diseases and delays the body's ageing process.</p>
+      </div> <!-- div card-body-->
+    <ul class="list-group list-group-flush">
+      <li class ="list-group-item">
+
+        Packages Available in
+
+      </li>
+     <li class ="list-group-item">
+        <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;"> 1 ltr Pouches
+      </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">5 ltr Pouches </li>
+       <li class ="list-group-item">      <img src="https://www.kappajobs.com/wp-content/uploads/2018/03/Kaleesuwari-Refinery-Pvt-Ltd-job-300x300.png"style="width:1.4em;">15 kg Tin </li>
+
+
+      </ul>
+
+
+
+    </div><!-- card -->
+
+  </div><!-- container -->
+  </div><!-- palm super -->
+</div><!--edible-container-->
+
+  <div class="resp-container">
+           <iframe class="resp-iframe" src="https://www.youtube.com/embed/1zjmdxl_vNs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
+
+   <br> <br>
+   </div>
+
+   <div class="container">
+
+     <div class="row">
+
+       <div class="col-md-6">
+
+         <div class="flex-container">
+
+           <div class="contact" id="contact">
+             Contact us
+             <p class ="text-center">
+               <img class="contact-photo" src="https://dyn.web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.11540-24%2F31223882_217020782224810_5996792428558811136_n.jpg%3Foe%3D5B2D247C%26oh%3Dc120c160200b1d7d8ea1339c7cbd4072&t=l&u=919750473918%40c.us&i=1526228667" >
+               <h4> KUMARAPPAN R  <br>
+             <strong>Sales Officer THIRUVALLUR ,</strong> <br>
+                 <p>  Mobile : 9750473918 </p> </h4>
+             <u> <cite><em>VEL MURUGAN TRADERS</em></cite></u>
+            <h6>This is designed for my personal purpose and I assure that it is built with my own interest :) </h6>
+             </p>
+           </div>
+
+           <div class="reach">
+             <hr>
+             Reach us
+             <div class="resp-container">
+             <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016365.543744!2d78.06161676105155!3d10.5610118208148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52662926c37d21%3A0x689def5c9a1b0e4d!2sKaleesuwari+Refinery+Private+Limited!5e0!3m2!1sen!2sin!4v1529421101936" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+             </div><!-- resp container-->
+           </div><!--reach-->
+
+         </div><!--flex container -->
+       </div> <!-- col md bs-->
+
+       <div class="col-md-6">
+
+         <div class = "form-group" >
+           <h4> Subscribe to our NewsLetter</h4>
+           <br>
+           <hr>
+           <form id="form" action="https://www.freecodecamp.com/email-submit">
+           <label for ="email">Email Address : </label>
+           <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="type your mail" name="email" required>
+           <small id="emailHelp" class="form-text text-muted"> Trust us! we never spam you!</small>
+
+
+          <br>
+        <input type="submit" id="submit" value="submit" >
+
+
+           </form>
+        </div> <!-- form close -->
+       </div> <!-- col bs -->
+
+     </div> <!-- row -->
+   </div><!-- container -->
+
+   </main>
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+   </body>
+</html>
+
+</body></html>
